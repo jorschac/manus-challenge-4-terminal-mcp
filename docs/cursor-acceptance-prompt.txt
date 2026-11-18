@@ -1,0 +1,13 @@
+执行本地终端 MCP 验收。只允许使用 challenge4-local-terminal 的 terminal_* MCP 工具，不用 Cursor 内置 shell、文件写入、其他 MCP、浏览器或修改配置。若工具不可用，明确报告 blocked，不用其他能力代替。
+
+当前 Cursor CLI 已从本工程 examples/cursor-smoke 目录启动；直接使用运行环境提供的工作区绝对路径，不要运行 shell 查询 pwd。
+
+1. terminal_create，cwd 使用当前工作区绝对路径。保存真实 session_id、link_id、shell_pid、cursor。
+2. terminal_exec 同一控制 link，command 为 printf 'MCP_CURSOR_OK\n'，request_key='cursor-smoke-print'，wait_ms=2000。确认输出和 exit_code=0；terminal_read 从创建返回的 cursor 读取记录。
+3. terminal_link(pid=shell_pid,access='read')，确认返回相同 session_id，保存只读 link。
+4. terminal_resize 控制 link 为 cols=100、rows=40。
+5. terminal_exec command 为 read "answer?INPUT: "; printf "ECHO:%s\n" "$answer"，request_key='cursor-smoke-interactive'，wait_ms=100。它应返回运行中。terminal_read 确认 INPUT 提示，terminal_write text='cursor-ok'，再 terminal_write keys=['Enter']。terminal_status 与 terminal_read 确认命令完成并包含 ECHO:cursor-ok。
+6. terminal_terminate 控制 link，grace_ms=200。确认 EXITED 并 remaining_pids 为空。terminal_read 验证退出日志可读。
+7. terminal_unlink 控制与只读 link。
+
+最终仅用简短中文报告实际成功/失败步骤、session_id、shell_pid 和关键输出。即使中途失败，也用已有控制 link 的 terminal_terminate 清理测试会话。不要只看到工具列表就声称验收成功。

@@ -1,0 +1,31 @@
+import type { BrokerConfig } from "./types.js";
+export declare class Broker {
+    readonly config: BrokerConfig;
+    private sessions;
+    private links;
+    private connections;
+    private server?;
+    private controlServer?;
+    private boundPaths;
+    private stopping;
+    private idleTimer?;
+    private sweep?;
+    private notificationTimers;
+    constructor(config?: BrokerConfig);
+    start(): Promise<void>;
+    private assertSocketAvailable;
+    private listen;
+    private restore;
+    private register;
+    private pruneExpiredSessions;
+    private scheduleNotification;
+    private enforceTotalBudget;
+    private accept;
+    private send;
+    private checkIdle;
+    private getLink;
+    private addLink;
+    private release;
+    private dispatch;
+    stop(): Promise<void>;
+}

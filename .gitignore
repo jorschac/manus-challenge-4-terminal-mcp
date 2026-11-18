@@ -1,0 +1,13 @@
+node_modules/
+.runtime/
+coverage/
+*.log
+.DS_Store
+
+.env
+.env.*
+.cursor/
+examples/cursor-smoke/
+*.pem
+*.key
+!evidence/tests/*.log

@@ -1,0 +1,282 @@
+[
+  {
+    "index": 1,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker creates a private PTY and keeps cwd/export across commands",
+    "status": "passed",
+    "duration_ms": 1037.4539169999998
+  },
+  {
+    "index": 2,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker links the same managed PID with independent reader cursors and exclusive control",
+    "status": "passed",
+    "duration_ms": 1210.1994579999998
+  },
+  {
+    "index": 3,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker keeps interactive input separate from exec and safely supports Ctrl-C",
+    "status": "passed",
+    "duration_ms": 1099.962958
+  },
+  {
+    "index": 4,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker streams delayed output and cancellation only cancels the wait",
+    "status": "passed",
+    "duration_ms": 2069.2150840000004
+  },
+  {
+    "index": 5,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker uses request-key idempotency and handles short output budgets explicitly",
+    "status": "passed",
+    "duration_ms": 743.0830839999999
+  },
+  {
+    "index": 6,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker allows gateway reconnect and releases an orphaned control lease",
+    "status": "passed",
+    "duration_ms": 1106.609625
+  },
+  {
+    "index": 7,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker resizes and terminates ordinary process trees idempotently, preserving output",
+    "status": "passed",
+    "duration_ms": 2543.8132920000007
+  },
+  {
+    "index": 8,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker marks abrupt broker loss UNKNOWN/LOST and never retries uncertain commands",
+    "status": "passed",
+    "duration_ms": 1318.8416670000006
+  },
+  {
+    "index": 9,
+    "file": "broker.test.ts",
+    "name": "real macOS terminal broker races startup safely and enforces independent runtime separation",
+    "status": "passed",
+    "duration_ms": 882.462042000001
+  },
+  {
+    "index": 10,
+    "file": "broker.test.ts",
+    "name": "managed-shell fault boundaries does not queue idle input and cleans up command scripts",
+    "status": "passed",
+    "duration_ms": 720.8402499999993
+  },
+  {
+    "index": 11,
+    "file": "broker.test.ts",
+    "name": "managed-shell fault boundaries reports UNKNOWN for exit without inventing a command exit code",
+    "status": "passed",
+    "duration_ms": 1025.354625
+  },
+  {
+    "index": 12,
+    "file": "broker.test.ts",
+    "name": "managed-shell fault boundaries detects exec replacing the managed shell and preserves raw control",
+    "status": "passed",
+    "duration_ms": 1685.8748330000017
+  },
+  {
+    "index": 13,
+    "file": "broker.test.ts",
+    "name": "bounded MVP resources caps active sessions and retained records instead of growing forever",
+    "status": "passed",
+    "duration_ms": 1773.8010840000006
+  },
+  {
+    "index": 14,
+    "file": "broker.test.ts",
+    "name": "bounded MVP resources exits idle brokers even while the periodic sweep runs",
+    "status": "passed",
+    "duration_ms": 1986.7466249999998
+  },
+  {
+    "index": 15,
+    "file": "broker.test.ts",
+    "name": "bounded MVP resources keeps large UTF-8 output intact across IPC chunks and read pages",
+    "status": "passed",
+    "duration_ms": 1027.3017499999987
+  },
+  {
+    "index": 16,
+    "file": "event-store.test.ts",
+    "name": "EventStore appends, emits immutable snapshots, and replays from an initial cursor",
+    "status": "passed",
+    "duration_ms": 30.403999999999996
+  },
+  {
+    "index": 17,
+    "file": "event-store.test.ts",
+    "name": "EventStore supports independent readers and repeatedly reusing the same cursor",
+    "status": "passed",
+    "duration_ms": 26.81287499999999
+  },
+  {
+    "index": 18,
+    "file": "event-store.test.ts",
+    "name": "EventStore rotates segments at the configured size and applies private filesystem modes",
+    "status": "passed",
+    "duration_ms": 106.48112499999999
+  },
+  {
+    "index": 19,
+    "file": "event-store.test.ts",
+    "name": "EventStore defaults to 64 KiB segments without a per-event permanent index",
+    "status": "passed",
+    "duration_ms": 482.506584
+  },
+  {
+    "index": 20,
+    "file": "event-store.test.ts",
+    "name": "EventStore preserves cursor identity and records on clean restart and never reuses sequences",
+    "status": "passed",
+    "duration_ms": 76.37787500000002
+  },
+  {
+    "index": 21,
+    "file": "event-store.test.ts",
+    "name": "EventStore compacts the final segment and expires evicted cursors with an actionable boundary",
+    "status": "passed",
+    "duration_ms": 77.34112500000003
+  },
+  {
+    "index": 22,
+    "file": "event-store.test.ts",
+    "name": "EventStore retains the latest record even at a zero retention limit, and explicitly signals overflow",
+    "status": "passed",
+    "duration_ms": 62.832042
+  },
+  {
+    "index": 23,
+    "file": "event-store.test.ts",
+    "name": "EventStore prunes full segments, survives restart, and does not resurrect evicted cached events",
+    "status": "passed",
+    "duration_ms": 292.15987499999994
+  },
+  {
+    "index": 24,
+    "file": "event-store.test.ts",
+    "name": "EventStore rejects foreign, malformed, altered, and future cursors without consuming history",
+    "status": "passed",
+    "duration_ms": 53.88333299999999
+  },
+  {
+    "index": 25,
+    "file": "event-store.test.ts",
+    "name": "EventStore rejects reuse of a session directory for a foreign session",
+    "status": "passed",
+    "duration_ms": 19.28774999999996
+  },
+  {
+    "index": 26,
+    "file": "event-store.test.ts",
+    "name": "EventStore enforces an exact UTF-8 serialized array budget and paginates 2 KiB output chunks",
+    "status": "passed",
+    "duration_ms": 31.881832999999915
+  },
+  {
+    "index": 27,
+    "file": "event-store.test.ts",
+    "name": "EventStore fails actionably instead of looping if the next event exceeds the read budget",
+    "status": "passed",
+    "duration_ms": 41.72295900000017
+  },
+  {
+    "index": 28,
+    "file": "event-store.test.ts",
+    "name": "EventStore caps individual records and rejects invalid arguments without consuming sequence numbers",
+    "status": "passed",
+    "duration_ms": 26.562875000000076
+  },
+  {
+    "index": 29,
+    "file": "event-store.test.ts",
+    "name": "EventStore handles short writes rather than silently persisting truncated records",
+    "status": "passed",
+    "duration_ms": 46.031999999999925
+  },
+  {
+    "index": 30,
+    "file": "event-store.test.ts",
+    "name": "EventStore degrades on write failure, emits gap/storage information, and bounds memory",
+    "status": "passed",
+    "duration_ms": 53.374458000000004
+  },
+  {
+    "index": 31,
+    "file": "event-store.test.ts",
+    "name": "EventStore detects a real inaccessible-directory fault without silently losing history",
+    "status": "passed",
+    "duration_ms": 56.62916600000017
+  },
+  {
+    "index": 32,
+    "file": "event-store.test.ts",
+    "name": "EventStore degrades on a disk-read failure and gives expired readers the new earliest cursor",
+    "status": "passed",
+    "duration_ms": 64.02425000000017
+  },
+  {
+    "index": 33,
+    "file": "event-store.test.ts",
+    "name": "EventStore reports the uncertain non-durable tail on restart and never reuses its sequence numbers",
+    "status": "passed",
+    "duration_ms": 45.70341600000006
+  },
+  {
+    "index": 34,
+    "file": "event-store.test.ts",
+    "name": "EventStore recovers an incomplete final line, while rejecting complete corrupt JSON records",
+    "status": "passed",
+    "duration_ms": 43.40449999999987
+  },
+  {
+    "index": 35,
+    "file": "event-store.test.ts",
+    "name": "EventStore fails explicitly if even initial durable sequence reservation is impossible",
+    "status": "passed",
+    "duration_ms": 4.846333000000186
+  },
+  {
+    "index": 36,
+    "file": "event-store.test.ts",
+    "name": "EventStore degrades if retention cannot delete a segment, without silently returning incomplete disk history",
+    "status": "passed",
+    "duration_ms": 88.58833300000015
+  },
+  {
+    "index": 37,
+    "file": "event-store.test.ts",
+    "name": "EventStore rejects invalid UTF-8 on replay rather than miscounting the serialized read budget",
+    "status": "passed",
+    "duration_ms": 23.16579200000001
+  },
+  {
+    "index": 38,
+    "file": "event-store.test.ts",
+    "name": "EventStore closes idempotently and rejects use after closing",
+    "status": "passed",
+    "duration_ms": 18.002416999999923
+  },
+  {
+    "index": 39,
+    "file": "mcp.test.ts",
+    "name": "MCP legacy SDK exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF",
+    "status": "passed",
+    "duration_ms": 3262.400708
+  },
+  {
+    "index": 40,
+    "file": "mcp.test.ts",
+    "name": "MCP modern SDK exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF",
+    "status": "passed",
+    "duration_ms": 3134.319833
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "repository": "jorschac/manus-challenge-4-terminal-mcp",
+  "visibility": "public (pending confirmation and upload)",
+  "tests_total": 40,
+  "tests_passed": 40,
+  "cursor_tool_calls": 15,
+  "cursor_tools": 9,
+  "core_changed_by_redaction": [],
+  "redactions": {
+    "local-identifier": 41,
+    "private-reference-path": 10
+  },
+  "secret_scan": {
+    "tool": "Gitleaks",
+    "version": "8.30.1",
+    "mode": "dir",
+    "default_rules": true,
+    "max_decode_depth": 2,
+    "findings": 0,
+    "status": "PASS",
+    "qualification": "Pattern detection is not a proof that every possible secret has been eliminated."
+  },
+  "excluded": [
+    "node_modules",
+    "actual Cursor configuration",
+    "runtime data",
+    "raw model thinking trace",
+    "Manus connector configuration",
+    "environment secrets",
+    "other coding challenges"
+  ],
+  "note": "Only publication copies are sanitized; original local evidence and global credentials are not deleted or changed."
+}

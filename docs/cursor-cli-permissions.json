@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Mcp(challenge4-local-terminal:terminal_create)",
+      "Mcp(challenge4-local-terminal:terminal_exec)",
+      "Mcp(challenge4-local-terminal:terminal_link)",
+      "Mcp(challenge4-local-terminal:terminal_read)",
+      "Mcp(challenge4-local-terminal:terminal_resize)",
+      "Mcp(challenge4-local-terminal:terminal_status)",
+      "Mcp(challenge4-local-terminal:terminal_terminate)",
+      "Mcp(challenge4-local-terminal:terminal_unlink)",
+      "Mcp(challenge4-local-terminal:terminal_write)"
+    ],
+    "deny": [
+      "Shell(*)",
+      "Write(*)",
+      "WebFetch(*)"
+    ]
+  }
+}

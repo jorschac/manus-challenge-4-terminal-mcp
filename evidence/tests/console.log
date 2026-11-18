@@ -1,0 +1,37 @@
+
+ RUN  v5.1.0 /workspace/local-terminal-mcp
+
+ ✓ test/broker.test.ts (15 tests) 20233ms
+   ✓ real macOS terminal broker (9)
+     ✓ creates a private PTY and keeps cwd/export across commands 1037ms
+     ✓ links the same managed PID with independent reader cursors and exclusive control 1210ms
+     ✓ keeps interactive input separate from exec and safely supports Ctrl-C 1100ms
+     ✓ streams delayed output and cancellation only cancels the wait 2069ms
+     ✓ uses request-key idempotency and handles short output budgets explicitly 743ms
+     ✓ allows gateway reconnect and releases an orphaned control lease 1107ms
+     ✓ resizes and terminates ordinary process trees idempotently, preserving output 2544ms
+     ✓ marks abrupt broker loss UNKNOWN/LOST and never retries uncertain commands 1319ms
+     ✓ races startup safely and enforces independent runtime separation 882ms
+   ✓ managed-shell fault boundaries (3)
+     ✓ does not queue idle input and cleans up command scripts 721ms
+     ✓ reports UNKNOWN for exit without inventing a command exit code 1025ms
+     ✓ detects exec replacing the managed shell and preserves raw control 1686ms
+   ✓ bounded MVP resources (3)
+     ✓ caps active sessions and retained records instead of growing forever 1774ms
+     ✓ exits idle brokers even while the periodic sweep runs 1987ms
+     ✓ keeps large UTF-8 output intact across IPC chunks and read pages 1027ms
+ ✓ test/mcp.test.ts (2 tests) 6397ms
+   ✓ MCP legacy SDK (1)
+     ✓ exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF 3262ms
+   ✓ MCP modern SDK (1)
+     ✓ exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF 3134ms
+ ✓ test/event-store.test.ts (23 tests) 1774ms
+   ✓ EventStore (23)
+     ✓ defaults to 64 KiB segments without a per-event permanent index 483ms
+
+ Test Files  3 passed (3)
+      Tests  40 passed (40)
+   Start at  13:38:00
+   Duration  28.77s (tests 99%)
+
+JSON report written to /workspace/.work/terminal-mcp-challenge4/test-results.json

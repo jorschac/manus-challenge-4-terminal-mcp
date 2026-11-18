@@ -1,0 +1,126 @@
+40 individual test records
+Source: final Vitest JSON report from 2026-11-18 13:38; not a new execution.
+Result: 40 passed / 40 total; 0 failed; 3 test files; console duration 28.77 s.
+Durations below are the actual per-test values from the same JSON report.
+Local paths are sanitized; no result has been invented.
+
+01. PASS | broker.test.ts | 1037.454 ms
+real macOS terminal broker creates a private PTY and keeps cwd/export across commands
+
+02. PASS | broker.test.ts | 1210.199 ms
+real macOS terminal broker links the same managed PID with independent reader cursors and exclusive control
+
+03. PASS | broker.test.ts | 1099.963 ms
+real macOS terminal broker keeps interactive input separate from exec and safely supports Ctrl-C
+
+04. PASS | broker.test.ts | 2069.215 ms
+real macOS terminal broker streams delayed output and cancellation only cancels the wait
+
+05. PASS | broker.test.ts | 743.083 ms
+real macOS terminal broker uses request-key idempotency and handles short output budgets explicitly
+
+06. PASS | broker.test.ts | 1106.610 ms
+real macOS terminal broker allows gateway reconnect and releases an orphaned control lease
+
+07. PASS | broker.test.ts | 2543.813 ms
+real macOS terminal broker resizes and terminates ordinary process trees idempotently, preserving output
+
+08. PASS | broker.test.ts | 1318.842 ms
+real macOS terminal broker marks abrupt broker loss UNKNOWN/LOST and never retries uncertain commands
+
+09. PASS | broker.test.ts | 882.462 ms
+real macOS terminal broker races startup safely and enforces independent runtime separation
+
+10. PASS | broker.test.ts | 720.840 ms
+managed-shell fault boundaries does not queue idle input and cleans up command scripts
+
+11. PASS | broker.test.ts | 1025.355 ms
+managed-shell fault boundaries reports UNKNOWN for exit without inventing a command exit code
+
+12. PASS | broker.test.ts | 1685.875 ms
+managed-shell fault boundaries detects exec replacing the managed shell and preserves raw control
+
+13. PASS | broker.test.ts | 1773.801 ms
+bounded MVP resources caps active sessions and retained records instead of growing forever
+
+14. PASS | broker.test.ts | 1986.747 ms
+bounded MVP resources exits idle brokers even while the periodic sweep runs
+
+15. PASS | broker.test.ts | 1027.302 ms
+bounded MVP resources keeps large UTF-8 output intact across IPC chunks and read pages
+
+16. PASS | event-store.test.ts | 30.404 ms
+EventStore appends, emits immutable snapshots, and replays from an initial cursor
+
+17. PASS | event-store.test.ts | 26.813 ms
+EventStore supports independent readers and repeatedly reusing the same cursor
+
+18. PASS | event-store.test.ts | 106.481 ms
+EventStore rotates segments at the configured size and applies private filesystem modes
+
+19. PASS | event-store.test.ts | 482.507 ms
+EventStore defaults to 64 KiB segments without a per-event permanent index
+
+20. PASS | event-store.test.ts | 76.378 ms
+EventStore preserves cursor identity and records on clean restart and never reuses sequences
+
+21. PASS | event-store.test.ts | 77.341 ms
+EventStore compacts the final segment and expires evicted cursors with an actionable boundary
+
+22. PASS | event-store.test.ts | 62.832 ms
+EventStore retains the latest record even at a zero retention limit, and explicitly signals overflow
+
+23. PASS | event-store.test.ts | 292.160 ms
+EventStore prunes full segments, survives restart, and does not resurrect evicted cached events
+
+24. PASS | event-store.test.ts | 53.883 ms
+EventStore rejects foreign, malformed, altered, and future cursors without consuming history
+
+25. PASS | event-store.test.ts | 19.288 ms
+EventStore rejects reuse of a session directory for a foreign session
+
+26. PASS | event-store.test.ts | 31.882 ms
+EventStore enforces an exact UTF-8 serialized array budget and paginates 2 KiB output chunks
+
+27. PASS | event-store.test.ts | 41.723 ms
+EventStore fails actionably instead of looping if the next event exceeds the read budget
+
+28. PASS | event-store.test.ts | 26.563 ms
+EventStore caps individual records and rejects invalid arguments without consuming sequence numbers
+
+29. PASS | event-store.test.ts | 46.032 ms
+EventStore handles short writes rather than silently persisting truncated records
+
+30. PASS | event-store.test.ts | 53.374 ms
+EventStore degrades on write failure, emits gap/storage information, and bounds memory
+
+31. PASS | event-store.test.ts | 56.629 ms
+EventStore detects a real inaccessible-directory fault without silently losing history
+
+32. PASS | event-store.test.ts | 64.024 ms
+EventStore degrades on a disk-read failure and gives expired readers the new earliest cursor
+
+33. PASS | event-store.test.ts | 45.703 ms
+EventStore reports the uncertain non-durable tail on restart and never reuses its sequence numbers
+
+34. PASS | event-store.test.ts | 43.404 ms
+EventStore recovers an incomplete final line, while rejecting complete corrupt JSON records
+
+35. PASS | event-store.test.ts | 4.846 ms
+EventStore fails explicitly if even initial durable sequence reservation is impossible
+
+36. PASS | event-store.test.ts | 88.588 ms
+EventStore degrades if retention cannot delete a segment, without silently returning incomplete disk history
+
+37. PASS | event-store.test.ts | 23.166 ms
+EventStore rejects invalid UTF-8 on replay rather than miscounting the serialized read budget
+
+38. PASS | event-store.test.ts | 18.002 ms
+EventStore closes idempotently and rejects use after closing
+
+39. PASS | mcp.test.ts | 3262.401 ms
+MCP legacy SDK exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF
+
+40. PASS | mcp.test.ts | 3134.320 ms
+MCP modern SDK exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF
+

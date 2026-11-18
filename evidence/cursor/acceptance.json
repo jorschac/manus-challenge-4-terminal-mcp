@@ -1,0 +1,498 @@
+{
+  "验证结果": "通过",
+  "验证日期": "2026-11-18",
+  "Cursor会话": "<CURSOR_SESSION>",
+  "耗时毫秒": 104821,
+  "终端会话": "<TERMINAL_SESSION>",
+  "shell_pid": "<PID>",
+  "工具调用数量": 15,
+  "各工具调用次数": {
+    "terminal_create": 1,
+    "terminal_exec": 2,
+    "terminal_read": 4,
+    "terminal_link": 1,
+    "terminal_resize": 1,
+    "terminal_write": 2,
+    "terminal_status": 1,
+    "terminal_terminate": 1,
+    "terminal_unlink": 2
+  },
+  "使用内置shell": false,
+  "使用其他MCP": false,
+  "权限模式": "独立项目精确9工具allowlist；未使用force/yolo/approve-mcps",
+  "调用记录": [
+    {
+      "tool": "terminal_create",
+      "arguments": {
+        "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke"
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "shell_pid": "<PID>",
+        "process_identity": "<PRIVATE_PROCESS_IDENTITY>",
+        "tty": "<PRIVATE_TTY>",
+        "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke",
+        "cols": 80,
+        "rows": 24,
+        "state": "IDLE",
+        "created_at": "2026-11-18T05:48:46.389Z",
+        "cursor": "<CURSOR_1>",
+        "earliest_cursor": "<CURSOR_2>",
+        "storage_degraded": false,
+        "capabilities": {
+          "structured_exec": true,
+          "interactive_input": true,
+          "stdout_stderr_separate": false
+        },
+        "link_id": "<LINK_ID_3>",
+        "access": "control",
+        "link_expires_at": "2026-11-18T06:48:46.574Z",
+        "resource_uri": "terminal://link/<LINK_ID_3>/events"
+      }
+    },
+    {
+      "tool": "terminal_exec",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "command": "printf 'MCP_CURSOR_OK\\n'",
+        "request_key": "cursor-smoke-print",
+        "wait_ms": 2000
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "state": "IDLE",
+        "command": {
+          "command_id": "<COMMAND_ID_4>",
+          "request_key": "cursor-smoke-print",
+          "fingerprint": "e108b50659b644ed7d2ceb7c3ff46a3ccaba6f056bc5513dd730ba42bf53474a",
+          "state": "COMPLETED",
+          "accepted_at": "2026-11-18T05:48:55.114Z",
+          "exit_code": 0,
+          "start_cursor": "<CURSOR_1>",
+          "completion_seen": true,
+          "output_boundary_seen": true,
+          "started_at": "2026-11-18T05:48:55.149Z",
+          "completed_at": "2026-11-18T05:48:55.180Z",
+          "end_cursor": "<CURSOR_5>"
+        },
+        "command_id": "<COMMAND_ID_4>",
+        "command_state": "COMPLETED",
+        "exit_code": 0,
+        "output": "MCP_CURSOR_OK\r\n",
+        "events": [
+          {
+            "seq": 2,
+            "time": "2026-11-18T05:48:55.122Z",
+            "type": "command_started",
+            "data": {
+              "command_id": "<COMMAND_ID_4>"
+            }
+          },
+          {
+            "seq": 3,
+            "time": "2026-11-18T05:48:55.157Z",
+            "type": "output",
+            "data": {
+              "text": "MCP_CURSOR_OK\r\n",
+              "command_id": "<COMMAND_ID_4>"
+            }
+          },
+          {
+            "seq": 4,
+            "time": "2026-11-18T05:48:55.180Z",
+            "type": "command_completed",
+            "data": {
+              "command_id": "<COMMAND_ID_4>",
+              "exit_code": 0,
+              "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke"
+            }
+          }
+        ],
+        "next_cursor": "<CURSOR_5>",
+        "earliest_cursor": "<CURSOR_2>",
+        "has_more": false,
+        "output_truncated": false,
+        "storage_degraded": false
+      }
+    },
+    {
+      "tool": "terminal_read",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "after_cursor": "<CURSOR_1>"
+      },
+      "result": {
+        "events": [
+          {
+            "seq": 2,
+            "time": "2026-11-18T05:48:55.122Z",
+            "type": "command_started",
+            "data": {
+              "command_id": "<COMMAND_ID_4>"
+            }
+          },
+          {
+            "seq": 3,
+            "time": "2026-11-18T05:48:55.157Z",
+            "type": "output",
+            "data": {
+              "text": "MCP_CURSOR_OK\r\n",
+              "command_id": "<COMMAND_ID_4>"
+            }
+          },
+          {
+            "seq": 4,
+            "time": "2026-11-18T05:48:55.180Z",
+            "type": "command_completed",
+            "data": {
+              "command_id": "<COMMAND_ID_4>",
+              "exit_code": 0,
+              "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke"
+            }
+          }
+        ],
+        "next_cursor": "<CURSOR_5>",
+        "earliest_cursor": "<CURSOR_2>",
+        "has_more": false,
+        "storage_degraded": false,
+        "session_id": "<TERMINAL_SESSION>",
+        "state": "IDLE",
+        "eof": false
+      }
+    },
+    {
+      "tool": "terminal_link",
+      "arguments": {
+        "pid": "<PID>",
+        "access": "read"
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "shell_pid": "<PID>",
+        "process_identity": "<PRIVATE_PROCESS_IDENTITY>",
+        "tty": "<PRIVATE_TTY>",
+        "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke",
+        "cols": 80,
+        "rows": 24,
+        "state": "IDLE",
+        "created_at": "2026-11-18T05:48:46.389Z",
+        "cursor": "<CURSOR_5>",
+        "earliest_cursor": "<CURSOR_2>",
+        "storage_degraded": false,
+        "capabilities": {
+          "structured_exec": true,
+          "interactive_input": true,
+          "stdout_stderr_separate": false
+        },
+        "link_id": "<LINK_ID_6>",
+        "access": "read",
+        "link_expires_at": "2026-11-18T06:49:08.664Z",
+        "resource_uri": "terminal://link/<LINK_ID_6>/events"
+      }
+    },
+    {
+      "tool": "terminal_resize",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "cols": 100,
+        "rows": 40
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "shell_pid": "<PID>",
+        "process_identity": "<PRIVATE_PROCESS_IDENTITY>",
+        "tty": "<PRIVATE_TTY>",
+        "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke",
+        "cols": 100,
+        "rows": 40,
+        "state": "IDLE",
+        "created_at": "2026-11-18T05:48:46.389Z",
+        "cursor": "<CURSOR_5>",
+        "earliest_cursor": "<CURSOR_2>",
+        "storage_degraded": false,
+        "capabilities": {
+          "structured_exec": true,
+          "interactive_input": true,
+          "stdout_stderr_separate": false
+        }
+      }
+    },
+    {
+      "tool": "terminal_exec",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "command": "read \"answer?INPUT: \"; printf \"ECHO:%s\\n\" \"$answer\"",
+        "request_key": "cursor-smoke-interactive",
+        "wait_ms": 100
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "state": "BUSY",
+        "command": {
+          "command_id": "<COMMAND_ID_7>",
+          "request_key": "cursor-smoke-interactive",
+          "fingerprint": "a3aa56377c1e02b7231155c20ae2f6a29a55b8795180e56f981c5418c7ac0f27",
+          "state": "RUNNING",
+          "accepted_at": "2026-11-18T05:49:19.160Z",
+          "exit_code": null,
+          "start_cursor": "<CURSOR_5>",
+          "completion_seen": false,
+          "output_boundary_seen": false,
+          "started_at": "2026-11-18T05:49:19.185Z"
+        },
+        "command_id": "<COMMAND_ID_7>",
+        "command_state": "RUNNING",
+        "exit_code": null,
+        "output": "INPUT: ",
+        "events": [
+          {
+            "seq": 5,
+            "time": "2026-11-18T05:49:19.164Z",
+            "type": "command_started",
+            "data": {
+              "command_id": "<COMMAND_ID_7>"
+            }
+          },
+          {
+            "seq": 6,
+            "time": "2026-11-18T05:49:19.194Z",
+            "type": "output",
+            "data": {
+              "text": "INPUT: ",
+              "command_id": "<COMMAND_ID_7>"
+            }
+          }
+        ],
+        "next_cursor": "<CURSOR_8>",
+        "earliest_cursor": "<CURSOR_2>",
+        "has_more": false,
+        "output_truncated": false,
+        "storage_degraded": false
+      }
+    },
+    {
+      "tool": "terminal_read",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "after_cursor": "<CURSOR_5>"
+      },
+      "result": {
+        "events": [
+          {
+            "seq": 5,
+            "time": "2026-11-18T05:49:19.164Z",
+            "type": "command_started",
+            "data": {
+              "command_id": "<COMMAND_ID_7>"
+            }
+          },
+          {
+            "seq": 6,
+            "time": "2026-11-18T05:49:19.194Z",
+            "type": "output",
+            "data": {
+              "text": "INPUT: ",
+              "command_id": "<COMMAND_ID_7>"
+            }
+          }
+        ],
+        "next_cursor": "<CURSOR_8>",
+        "earliest_cursor": "<CURSOR_2>",
+        "has_more": false,
+        "storage_degraded": false,
+        "session_id": "<TERMINAL_SESSION>",
+        "state": "BUSY",
+        "eof": false
+      }
+    },
+    {
+      "tool": "terminal_write",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "text": "cursor-ok"
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "bytes_written": 9,
+        "delivered_to_pty": true
+      }
+    },
+    {
+      "tool": "terminal_write",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "keys": [
+          "Enter"
+        ]
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "bytes_written": 1,
+        "delivered_to_pty": true
+      }
+    },
+    {
+      "tool": "terminal_status",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "command_id": "<COMMAND_ID_7>"
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "shell_pid": "<PID>",
+        "process_identity": "<PRIVATE_PROCESS_IDENTITY>",
+        "tty": "<PRIVATE_TTY>",
+        "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke",
+        "cols": 100,
+        "rows": 40,
+        "state": "IDLE",
+        "created_at": "2026-11-18T05:48:46.389Z",
+        "cursor": "<CURSOR_9>",
+        "earliest_cursor": "<CURSOR_2>",
+        "storage_degraded": false,
+        "capabilities": {
+          "structured_exec": true,
+          "interactive_input": true,
+          "stdout_stderr_separate": false
+        },
+        "command": {
+          "command_id": "<COMMAND_ID_7>",
+          "request_key": "cursor-smoke-interactive",
+          "fingerprint": "a3aa56377c1e02b7231155c20ae2f6a29a55b8795180e56f981c5418c7ac0f27",
+          "state": "COMPLETED",
+          "accepted_at": "2026-11-18T05:49:19.160Z",
+          "exit_code": 0,
+          "start_cursor": "<CURSOR_5>",
+          "completion_seen": true,
+          "output_boundary_seen": true,
+          "started_at": "2026-11-18T05:49:19.185Z",
+          "completed_at": "2026-11-18T05:49:37.164Z",
+          "end_cursor": "<CURSOR_9>"
+        },
+        "command_count": 2,
+        "link_id": "<LINK_ID_3>",
+        "access": "control"
+      }
+    },
+    {
+      "tool": "terminal_read",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "after_cursor": "<CURSOR_8>",
+        "wait_ms": 2000
+      },
+      "result": {
+        "events": [
+          {
+            "seq": 7,
+            "time": "2026-11-18T05:49:37.142Z",
+            "type": "output",
+            "data": {
+              "text": "ECHO:cursor-ok\r\n",
+              "command_id": "<COMMAND_ID_7>"
+            }
+          },
+          {
+            "seq": 8,
+            "time": "2026-11-18T05:49:37.164Z",
+            "type": "command_completed",
+            "data": {
+              "command_id": "<COMMAND_ID_7>",
+              "exit_code": 0,
+              "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke"
+            }
+          }
+        ],
+        "next_cursor": "<CURSOR_9>",
+        "earliest_cursor": "<CURSOR_2>",
+        "has_more": false,
+        "storage_degraded": false,
+        "session_id": "<TERMINAL_SESSION>",
+        "state": "IDLE",
+        "eof": false
+      }
+    },
+    {
+      "tool": "terminal_terminate",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "grace_ms": 200
+      },
+      "result": {
+        "session_id": "<TERMINAL_SESSION>",
+        "shell_pid": "<PID>",
+        "process_identity": "<PRIVATE_PROCESS_IDENTITY>",
+        "tty": "<PRIVATE_TTY>",
+        "cwd": "/workspace/local-terminal-mcp/examples/cursor-smoke",
+        "cols": 100,
+        "rows": 40,
+        "state": "EXITED",
+        "created_at": "2026-11-18T05:48:46.389Z",
+        "shell_exit_code": 0,
+        "exited_at": "2026-11-18T05:49:48.702Z",
+        "cursor": "<CURSOR_10>",
+        "earliest_cursor": "<CURSOR_2>",
+        "storage_degraded": false,
+        "capabilities": {
+          "structured_exec": false,
+          "interactive_input": false,
+          "stdout_stderr_separate": false
+        },
+        "signaled_pids": [
+          "<SHELL_PID>"
+        ],
+        "killed_pids": [
+          "<SHELL_PID>"
+        ],
+        "remaining_pids": []
+      }
+    },
+    {
+      "tool": "terminal_read",
+      "arguments": {
+        "link_id": "<LINK_ID_3>",
+        "after_cursor": "<CURSOR_9>"
+      },
+      "result": {
+        "events": [
+          {
+            "seq": 9,
+            "time": "2026-11-18T05:49:48.702Z",
+            "type": "session_exit",
+            "data": {
+              "exit_code": 0
+            }
+          }
+        ],
+        "next_cursor": "<CURSOR_10>",
+        "earliest_cursor": "<CURSOR_2>",
+        "has_more": false,
+        "storage_degraded": false,
+        "session_id": "<TERMINAL_SESSION>",
+        "state": "EXITED",
+        "eof": true
+      }
+    },
+    {
+      "tool": "terminal_unlink",
+      "arguments": {
+        "link_id": "<LINK_ID_3>"
+      },
+      "result": {
+        "link_id": "<LINK_ID_3>",
+        "released": true
+      }
+    },
+    {
+      "tool": "terminal_unlink",
+      "arguments": {
+        "link_id": "<LINK_ID_6>"
+      },
+      "result": {
+        "link_id": "<LINK_ID_6>",
+        "released": true
+      }
+    }
+  ],
+  "公开脱敏说明": "Historical validation evidence only. Local identifiers, paths and opaque handles are replaced; statuses, outputs and counts are preserved. Original evidence remains local."
+}

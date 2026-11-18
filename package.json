@@ -1,0 +1,35 @@
+{
+  "name": "local-terminal-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local macOS PTY broker with a durable, agent-friendly MCP interface",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "bin": {
+    "local-terminal-mcp": "dist/mcp.js",
+    "local-terminal-broker": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "postinstall": "node scripts/fix-pty-helper.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run build && vitest run",
+    "start": "node dist/mcp.js",
+    "broker": "node dist/cli.js",
+    "demo": "node examples/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "node-pty": "1.1.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@types/node": "22.19.11",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "numTotalTestSuites": 9,
+  "numPassedTestSuites": 9,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 40,
+  "numPassedTests": 40,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1794980280887,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker creates a private PTY and keeps cwd/export across commands",
+          "status": "passed",
+          "title": "creates a private PTY and keeps cwd/export across commands",
+          "duration": 1037.4539169999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker links the same managed PID with independent reader cursors and exclusive control",
+          "status": "passed",
+          "title": "links the same managed PID with independent reader cursors and exclusive control",
+          "duration": 1210.1994579999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker keeps interactive input separate from exec and safely supports Ctrl-C",
+          "status": "passed",
+          "title": "keeps interactive input separate from exec and safely supports Ctrl-C",
+          "duration": 1099.962958,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker streams delayed output and cancellation only cancels the wait",
+          "status": "passed",
+          "title": "streams delayed output and cancellation only cancels the wait",
+          "duration": 2069.2150840000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker uses request-key idempotency and handles short output budgets explicitly",
+          "status": "passed",
+          "title": "uses request-key idempotency and handles short output budgets explicitly",
+          "duration": 743.0830839999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker allows gateway reconnect and releases an orphaned control lease",
+          "status": "passed",
+          "title": "allows gateway reconnect and releases an orphaned control lease",
+          "duration": 1106.609625,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker resizes and terminates ordinary process trees idempotently, preserving output",
+          "status": "passed",
+          "title": "resizes and terminates ordinary process trees idempotently, preserving output",
+          "duration": 2543.8132920000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker marks abrupt broker loss UNKNOWN/LOST and never retries uncertain commands",
+          "status": "passed",
+          "title": "marks abrupt broker loss UNKNOWN/LOST and never retries uncertain commands",
+          "duration": 1318.8416670000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "real macOS terminal broker"
+          ],
+          "fullName": "real macOS terminal broker races startup safely and enforces independent runtime separation",
+          "status": "passed",
+          "title": "races startup safely and enforces independent runtime separation",
+          "duration": 882.462042000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "managed-shell fault boundaries"
+          ],
+          "fullName": "managed-shell fault boundaries does not queue idle input and cleans up command scripts",
+          "status": "passed",
+          "title": "does not queue idle input and cleans up command scripts",
+          "duration": 720.8402499999993,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "managed-shell fault boundaries"
+          ],
+          "fullName": "managed-shell fault boundaries reports UNKNOWN for exit without inventing a command exit code",
+          "status": "passed",
+          "title": "reports UNKNOWN for exit without inventing a command exit code",
+          "duration": 1025.354625,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "managed-shell fault boundaries"
+          ],
+          "fullName": "managed-shell fault boundaries detects exec replacing the managed shell and preserves raw control",
+          "status": "passed",
+          "title": "detects exec replacing the managed shell and preserves raw control",
+          "duration": 1685.8748330000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "bounded MVP resources"
+          ],
+          "fullName": "bounded MVP resources caps active sessions and retained records instead of growing forever",
+          "status": "passed",
+          "title": "caps active sessions and retained records instead of growing forever",
+          "duration": 1773.8010840000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "bounded MVP resources"
+          ],
+          "fullName": "bounded MVP resources exits idle brokers even while the periodic sweep runs",
+          "status": "passed",
+          "title": "exits idle brokers even while the periodic sweep runs",
+          "duration": 1986.7466249999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "bounded MVP resources"
+          ],
+          "fullName": "bounded MVP resources keeps large UTF-8 output intact across IPC chunks and read pages",
+          "status": "passed",
+          "title": "keeps large UTF-8 output intact across IPC chunks and read pages",
+          "duration": 1027.3017499999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794980281022,
+      "endTime": 1794980301254.3018,
+      "status": "passed",
+      "message": "",
+      "name": "https://github.com/jorschac/manus-challenge-4-terminal-mcp/blob/main/test/broker.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore appends, emits immutable snapshots, and replays from an initial cursor",
+          "status": "passed",
+          "title": "appends, emits immutable snapshots, and replays from an initial cursor",
+          "duration": 30.403999999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore supports independent readers and repeatedly reusing the same cursor",
+          "status": "passed",
+          "title": "supports independent readers and repeatedly reusing the same cursor",
+          "duration": 26.81287499999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore rotates segments at the configured size and applies private filesystem modes",
+          "status": "passed",
+          "title": "rotates segments at the configured size and applies private filesystem modes",
+          "duration": 106.48112499999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore defaults to 64 KiB segments without a per-event permanent index",
+          "status": "passed",
+          "title": "defaults to 64 KiB segments without a per-event permanent index",
+          "duration": 482.506584,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore preserves cursor identity and records on clean restart and never reuses sequences",
+          "status": "passed",
+          "title": "preserves cursor identity and records on clean restart and never reuses sequences",
+          "duration": 76.37787500000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore compacts the final segment and expires evicted cursors with an actionable boundary",
+          "status": "passed",
+          "title": "compacts the final segment and expires evicted cursors with an actionable boundary",
+          "duration": 77.34112500000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore retains the latest record even at a zero retention limit, and explicitly signals overflow",
+          "status": "passed",
+          "title": "retains the latest record even at a zero retention limit, and explicitly signals overflow",
+          "duration": 62.832042,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore prunes full segments, survives restart, and does not resurrect evicted cached events",
+          "status": "passed",
+          "title": "prunes full segments, survives restart, and does not resurrect evicted cached events",
+          "duration": 292.15987499999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore rejects foreign, malformed, altered, and future cursors without consuming history",
+          "status": "passed",
+          "title": "rejects foreign, malformed, altered, and future cursors without consuming history",
+          "duration": 53.88333299999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore rejects reuse of a session directory for a foreign session",
+          "status": "passed",
+          "title": "rejects reuse of a session directory for a foreign session",
+          "duration": 19.28774999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore enforces an exact UTF-8 serialized array budget and paginates 2 KiB output chunks",
+          "status": "passed",
+          "title": "enforces an exact UTF-8 serialized array budget and paginates 2 KiB output chunks",
+          "duration": 31.881832999999915,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore fails actionably instead of looping if the next event exceeds the read budget",
+          "status": "passed",
+          "title": "fails actionably instead of looping if the next event exceeds the read budget",
+          "duration": 41.72295900000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore caps individual records and rejects invalid arguments without consuming sequence numbers",
+          "status": "passed",
+          "title": "caps individual records and rejects invalid arguments without consuming sequence numbers",
+          "duration": 26.562875000000076,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore handles short writes rather than silently persisting truncated records",
+          "status": "passed",
+          "title": "handles short writes rather than silently persisting truncated records",
+          "duration": 46.031999999999925,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore degrades on write failure, emits gap/storage information, and bounds memory",
+          "status": "passed",
+          "title": "degrades on write failure, emits gap/storage information, and bounds memory",
+          "duration": 53.374458000000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore detects a real inaccessible-directory fault without silently losing history",
+          "status": "passed",
+          "title": "detects a real inaccessible-directory fault without silently losing history",
+          "duration": 56.62916600000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore degrades on a disk-read failure and gives expired readers the new earliest cursor",
+          "status": "passed",
+          "title": "degrades on a disk-read failure and gives expired readers the new earliest cursor",
+          "duration": 64.02425000000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore reports the uncertain non-durable tail on restart and never reuses its sequence numbers",
+          "status": "passed",
+          "title": "reports the uncertain non-durable tail on restart and never reuses its sequence numbers",
+          "duration": 45.70341600000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore recovers an incomplete final line, while rejecting complete corrupt JSON records",
+          "status": "passed",
+          "title": "recovers an incomplete final line, while rejecting complete corrupt JSON records",
+          "duration": 43.40449999999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore fails explicitly if even initial durable sequence reservation is impossible",
+          "status": "passed",
+          "title": "fails explicitly if even initial durable sequence reservation is impossible",
+          "duration": 4.846333000000186,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore degrades if retention cannot delete a segment, without silently returning incomplete disk history",
+          "status": "passed",
+          "title": "degrades if retention cannot delete a segment, without silently returning incomplete disk history",
+          "duration": 88.58833300000015,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore rejects invalid UTF-8 on replay rather than miscounting the serialized read budget",
+          "status": "passed",
+          "title": "rejects invalid UTF-8 on replay rather than miscounting the serialized read budget",
+          "duration": 23.16579200000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "EventStore"
+          ],
+          "fullName": "EventStore closes idempotently and rejects use after closing",
+          "status": "passed",
+          "title": "closes idempotently and rejects use after closing",
+          "duration": 18.002416999999923,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794980307877,
+      "endTime": 1794980309650.0024,
+      "status": "passed",
+      "message": "",
+      "name": "https://github.com/jorschac/manus-challenge-4-terminal-mcp/blob/main/test/event-store.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "MCP legacy SDK"
+          ],
+          "fullName": "MCP legacy SDK exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF",
+          "status": "passed",
+          "title": "exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF",
+          "duration": 3262.400708,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "MCP modern SDK"
+          ],
+          "fullName": "MCP modern SDK exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF",
+          "status": "passed",
+          "title": "exposes all nine tools, durable reads and standard subscriptions; sessions survive stdin EOF",
+          "duration": 3134.319833,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794980301402,
+      "endTime": 1794980307798.3198,
+      "status": "passed",
+      "message": "",
+      "name": "https://github.com/jorschac/manus-challenge-4-terminal-mcp/blob/main/test/mcp.test.ts"
+    }
+  ]
+}
